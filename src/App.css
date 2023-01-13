@@ -7,32 +7,140 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-size: 11px;
+  font-family: Verdana, Arial;
+  background-color: #000156;
+  color: #ffffff;
+  background-image: url(https://web.archive.org/web/20080721080907im_/http://images.bluekaffee.com/interface/newbluekaffee/bg/squares.gif);
+  font-family: Verdana, Arial;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* LISTS */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* FORMS */
+input {
+  font-size: 11px;
+  font-family: Verdana, Arial;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+/* TABLES */
+table {
+  border-collapse: collapse;
+  border: 1px solid #000000;
+}
+
+td {
+  border: 1px solid #000000;
+  padding: 2px;
+}
+
+/* LAYOUT */
+#container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #100c6b;
+  margin: 0 1em;
+}
+
+.bk-logo {
   display: flex;
-  flex-direction: column;
+}
+
+/* HEADER */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.online-display {
+  display: flex;
+  text-align: right;
+  padding: 0 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* NAVBAR */
+.ul-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #100c6b;
+}
+
+.navLink-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenl;
+  margin: 12px 10px;
+}
+.navLink-wrapper:hover {
+  width: 100%;
+  background-color: #003188;
+}
+#navLink {
+  font-size: 12px;
+  font-family: Verdana, Arial;
+}
+#navLink:hover {
+  text-decoration: none;
+}
+#down-arrow {
+  padding: 0 4px;
+  max-height: 5px;
+}
+#navBar-text {
+  padding: 0 10px;
+  color: #86aeff;
+  text-decoration: none;
+}
+
+/* LOGIN-BAR */
+
+.login-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #100c6b;
+}
+
+.login-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 0 10px;
+  background-color: none;
+}
+
+.compact {
+  color: #141077;
+  font-family: verdana;
+  border: #000000 1px solid;
+  font-size: 10px;
+  /* color: #ffffff; */
 }
