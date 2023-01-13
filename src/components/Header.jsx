@@ -1,12 +1,20 @@
 import React from "react";
+import bkbottom from "../images/bkbottom.gif";
+import bktop from "../images/bktop.gif";
 
 const Header = () => {
+  const online = [
+    { name: "32 Users Online", link: "/online" },
+    { name: "0 Moderators Online", link: "/moderators" },
+    { name: "52 Birthdays", link: "/birthdays" },
+  ];
+
   return (
-    <div className="wrapper">
-      <div className="header-wrapper">
+    <div className="header-wrapper">
+      <div className="header-top">
         <img
           className="bk-logo"
-          src="https://web.archive.org/web/20080722102546im_/http://64.92.165.46/interface/newbluekaffee/bk_topleft1.gif"
+          src={bktop}
           alt="bk cup"
           width="379"
           height="64"
@@ -14,11 +22,24 @@ const Header = () => {
         />
         <div className="online-display">
           <ul id="container">
-            <li>32 Users Online</li>
-            <li>0 Moderators Online</li>
-            <li>52 Birthdays</li>
+            {online.map((link, index) => {
+              return (
+                <li key={index} id="online">
+                  <a href={link.link}>{link.name}</a>
+                </li>
+              );
+            })}
           </ul>
         </div>
+      </div>
+      <div className="header-bottom">
+        <img
+          className="bk-logo"
+          src={bkbottom}
+          alt="bk cup - bottom"
+          width="87"
+          height="44"
+        />
       </div>
     </div>
   );

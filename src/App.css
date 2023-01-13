@@ -12,8 +12,14 @@ body {
   font-family: Verdana, Arial;
   background-color: #000156;
   color: #ffffff;
-  background-image: url(https://web.archive.org/web/20080721080907im_/http://images.bluekaffee.com/interface/newbluekaffee/bg/squares.gif);
+  background-image: url("./images/squirrels.gif");
   font-family: Verdana, Arial;
+}
+
+.main-wrapper {
+  background-color: #000156;
+  margin: 0 2em;
+  border: 3px solid black;
 }
 
 /* LISTS */
@@ -34,26 +40,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* FORMS */
-input {
-  font-size: 11px;
-  font-family: Verdana, Arial;
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #000000;
-}
-
-/* TABLES */
-table {
-  border-collapse: collapse;
-  border: 1px solid #000000;
-}
-
-td {
-  border: 1px solid #000000;
-  padding: 2px;
-}
-
 /* LAYOUT */
 #container {
   width: 100%;
@@ -62,8 +48,8 @@ td {
 }
 
 .wrapper {
-  background-color: #100c6b;
-  margin: 0 1em;
+  /* background-color: #100c6b; */
+  /* margin: 0 1em; */
 }
 
 .bk-logo {
@@ -73,15 +59,40 @@ td {
 /* HEADER */
 .header-wrapper {
   display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #100c6b;
+}
+
+.header-top {
+  display: flex;
+  order: 1;
+  width: auto;
+  height: 100%;
+  align-items: top;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
+}
+
+.header-bottom {
+  display: flex;
+  order: 2;
+  width: auto;
+  background-color: #003188;
+  border-bottom: 1.2px solid black;
 }
 
 .online-display {
   display: flex;
   text-align: right;
-  padding: 0 0px;
+}
+a {
+  font-size: 10px;
+  color: #0099ff;
+}
+
+a:hover {
+  font-size: 10px;
+  color: #0000ff;
 }
 
 /* NAVBAR */
@@ -93,10 +104,11 @@ td {
 }
 
 .navLink-wrapper {
-  display: flex;
+  /* display: flex; */
   flex: 1;
-  justify-content: space-evenl;
-  margin: 12px 10px;
+  justify-content: space-evenly;
+  /* margin: 12px 10px; */
+  padding: 2px;
 }
 .navLink-wrapper:hover {
   width: 100%;
@@ -104,17 +116,19 @@ td {
 }
 #navLink {
   font-size: 12px;
+  font-weight: 600;
   font-family: Verdana, Arial;
 }
 #navLink:hover {
   text-decoration: none;
 }
 #down-arrow {
-  padding: 0 4px;
-  max-height: 5px;
+  padding: 0 2px;
+  max-height: 9px;
+  max-width: 9px;
 }
 #navBar-text {
-  padding: 0 10px;
+  /* padding: 0 10px; */
   color: #86aeff;
   text-decoration: none;
 }
@@ -123,24 +137,51 @@ td {
 
 .login-bar {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
   align-items: center;
-  padding: 0 10px;
-  background-color: #100c6b;
+  background-color: rgb(13, 10, 84);
+}
+
+.login-left {
+  display: flex;
+  flex: 1;
+  padding: 0 4px;
+}
+
+.login-right {
+  display: flex;
+  text-align: right;
+  padding: 0 4px;
+}
+
+.login-right-top {
+  display: flex;
+  text-align: right;
+}
+.login-right-bottom {
+  display: flex;
+  text-align: right;
+  justify-content: right;
 }
 
 .login-form {
   display: flex;
-  justify-content: space-between;
-  align-items: right;
   padding: 0 10px;
-  background-color: none;
+}
+
+.form-group {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0 2px;
+  /* background-color: none; */
 }
 
 .compact {
-  color: #141077;
+  background-color: #141077 !important;
   font-family: verdana;
   border: #000000 1px solid;
   font-size: 10px;
-  /* color: #ffffff; */
+  color: white;
 }

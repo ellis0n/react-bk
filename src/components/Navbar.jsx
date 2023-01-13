@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const navLinks = [
@@ -18,12 +20,11 @@ const Navbar = () => {
           return (
             <div className="navLink-wrapper">
               <li key={index} id="navLink">
-                {/* Convert image to svg */}
-                {/* <img
-                  src="https://web.archive.org/web/20071110203541im_/http://images.bluekaffee.com/sys/down.gif"
-                  alt="down arrow"
-                  id="down-arrow"
-                /> */}
+                <FontAwesomeIcon
+                  icon={faCaretDown}
+                  color="#86aeff"
+                  style={{ padding: "0px 6 px" }}
+                />
                 <a id="navBar-text" href={link.link}>
                   {link.name}
                 </a>

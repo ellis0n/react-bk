@@ -1,13 +1,15 @@
 import React from "react";
-import Navbar from "./Navbar";
-import LoginBar from "./LoginBar";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 
 const Body = () => {
   return (
-    <>
-      <Navbar />
-      <LoginBar />
-    </>
+    <div>
+      {/* <Calendar /> */}
+      <div>
+        <h1>BLUE KAFFEE </h1>
+      </div>
+    </div>
   );
 };
 
