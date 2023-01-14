@@ -9,7 +9,7 @@ const LoginBar = () => {
       </div>
 
       <div className="login-right">
-        <form autocomplete="off">
+        <form>
           <div className="login-right-top">
             <div className="form-group">
               user: &nbsp;

@@ -1,15 +1,17 @@
 import React from "react";
 
-const DropdownMenu = () => {
-  const placeholderObj = {
-    0: "until I log out",
-    1: "half hour",
-    2: "one hour",
-    3: "one day",
-    4: "one week",
-  };
-
-  return <div></div>;
+const DropdownMenu = (props) => {
+  const { options } = props;
+  console.log(options);
+  return (
+    <div className="dropdown-menu">
+      {Object.entries(options).map(([key, value]) => (
+        <div className="dropdown-item" key={key}>
+          <a href={value}>{key}</a>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default DropdownMenu;

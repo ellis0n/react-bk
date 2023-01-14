@@ -17,12 +17,10 @@ const Footer = () => {
       </div>
       {footerLinks.map((link, index) => {
         return (
-          <>
-            <a key={index} href={link.link}>
-              {link.name}
-            </a>
-            {index < footerLinks.length - 1 && <span> | </span>}
-          </>
+          <div key={index}>
+            <a href={link.link}>{link.name}</a>
+            {index < footerLinks.length - 1 && <span>|</span>}
+          </div>
         );
       })}
     </div>
