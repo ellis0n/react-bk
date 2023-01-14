@@ -15,7 +15,7 @@ const Header = () => {
         <img
           className="bk-logo"
           src={bktop}
-          alt="bk cup"
+          alt="bk cup - logo"
           width="379"
           height="64"
           border="0"

@@ -9,29 +9,29 @@ const LoginBar = () => {
       </div>
 
       <div className="login-right">
-        <form>
+        <form autocomplete="off">
           <div className="login-right-top">
             <div className="form-group">
-              user:
+              user: &nbsp;
               <input
                 type="text"
                 name="username"
-                placeholder="username"
+                placeholder=""
                 className="compact"
                 maxLength={40}
                 size="10"
+                autoComplete="off"
               />
             </div>
             <div className="form-group">
-              pass:
+              pass: &nbsp;
               <input
                 className="compact"
                 type="password"
                 name="password"
-                placeholder="password"
+                placeholder=""
                 maxLength={40}
                 size="10"
-                autoComplete="off"
               />
             </div>
             <div className="form-group">

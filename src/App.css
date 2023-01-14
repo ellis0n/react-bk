@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /* display: flex; */
+  justify-content: center;
 }
 
 .App-logo {
@@ -18,8 +20,11 @@ body {
 
 .main-wrapper {
   background-color: #000156;
-  margin: 0 2em;
+  margin: 0 4em;
   border: 3px solid black;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* LISTS */
@@ -84,6 +89,7 @@ a:hover {
 .online-display {
   display: flex;
   text-align: right;
+  padding: 0 4px;
 }
 a {
   font-size: 10px;
@@ -96,39 +102,30 @@ a:hover {
 }
 
 /* NAVBAR */
-.ul-nav {
+.navbar-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
   background-color: #100c6b;
+  width: auto;
 }
 
-.navLink-wrapper {
-  /* display: flex; */
-  flex: 1;
-  justify-content: space-evenly;
-  /* margin: 12px 10px; */
-  padding: 2px;
+.navLink {
+  overflow: hidden;
+  padding: 0.3em 1rem;
+  display: flex;
+  align-items: center;
+  border: solid #141077;
 }
-.navLink-wrapper:hover {
-  width: 100%;
+
+.navLink:hover {
   background-color: #003188;
+  border: solid #100c6b;
 }
-#navLink {
-  font-size: 12px;
-  font-weight: 600;
+
+.navLink a {
+  font-weight: bold;
   font-family: Verdana, Arial;
-}
-#navLink:hover {
-  text-decoration: none;
-}
-#down-arrow {
-  padding: 0 2px;
-  max-height: 9px;
-  max-width: 9px;
-}
-#navBar-text {
-  /* padding: 0 10px; */
+  font-size: 12px;
   color: #86aeff;
   text-decoration: none;
 }
@@ -140,6 +137,8 @@ a:hover {
   flex-direction: row;
   align-items: center;
   background-color: rgb(13, 10, 84);
+  border-top: 1.2px solid black;
+  border-bottom: 1.2px solid black;
 }
 
 .login-left {

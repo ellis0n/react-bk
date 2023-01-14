@@ -6,8 +6,8 @@ const Body = () => {
   return (
     <div>
       {/* <Calendar /> */}
-      <div>
-        <h1>BLUE KAFFEE </h1>
+      <div style={{ textAlign: "left", paddingBottom: "273px" }}>
+        <p style={{ paddingLeft: "2px" }}>You have successfully logged out.</p>
       </div>
     </div>
   );
