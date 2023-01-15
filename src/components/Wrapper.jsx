@@ -7,15 +7,15 @@ import Footer from "./Footer";
 
 const Wrapper = () => {
   return (
-    <>
-      <div className="main-wrapper">
+    <div className="App">
+      <div className="body-wrapper">
         <Header />
         <Navbar />
         <LoginBar />
         <Body />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

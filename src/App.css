@@ -1,7 +1,11 @@
 .App {
   text-align: center;
   /* display: flex; */
-  justify-content: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .App-logo {
@@ -18,13 +22,17 @@ body {
   font-family: Verdana, Arial;
 }
 
-.main-wrapper {
+.body-wrapper {
+  /* margin: 0% 2%; */
+  /* display: flex; */
+  /* flex-direction: column; */
   background-color: #000156;
-  margin: 0 4em;
+  /* margin: 0 4%; */
   border: 3px solid black;
-  max-width: 750px;
-  display: flex;
-  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+  justify-content: center;
+  position: relative;
 }
 
 /* LISTS */
@@ -67,6 +75,7 @@ a:hover {
   flex-direction: column;
   position: relative;
   background-color: #100c6b;
+  width: 750px;
 }
 
 .header-top {
@@ -114,10 +123,12 @@ a:hover {
 
 .navLink {
   flex: 1;
-  padding: 0.2rem;
-  margin: 1px;
+  padding: 2px;
+  margin: 2px;
   border: solid #141077;
   width: 100%;
+  max-width: 675px;
+  cursor: pointer;
 }
 
 .navLink:hover {
@@ -131,6 +142,7 @@ a:hover {
   font-size: 12px;
   color: #86aeff;
   text-decoration: none;
+  flex: 1;
 }
 
 .dropdown-menu {
@@ -139,7 +151,8 @@ a:hover {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  background-color: #141077;
+  justify-content: start;
+  background-color: rgb(14, 11, 96);
   border: 1px solid #000000;
   text-align: left;
   align-items: flex-start;
@@ -148,13 +161,14 @@ a:hover {
 .dropdown-item a {
   font: 12px Verdana, Arial;
   top: 100%;
-  margin-bottom: 8px;
+  padding: 0 2px;
+  color: #0099ff;
   /* z-index: 1; */
 }
 
 .dropdown-item a:hover {
   text-decoration: underline;
-  color: #141077;
+  color: blue;
 }
 
 /* LOGIN-BAR */
@@ -210,4 +224,24 @@ a:hover {
   border: #000000 1px solid;
   font-size: 10px;
   color: white;
+}
+
+/* FOOTER */
+.footer-wrapper {
+  position: sticky;
+  flex-direction: column;
+  /* max-width: 800px; */
+  background: none;
+  position: relative;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+}
+.footer-links a:hover {
+  font-size: 10px;
 }
