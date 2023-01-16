@@ -1,11 +1,21 @@
+body {
+  font-size: 11px;
+  font-family: Verdana, Arial;
+  color: #ffffff;
+  background-image: url("./images/squirrels.gif");
+  font-family: Verdana, Arial;
+}
+
 .App {
   text-align: center;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 1fr; */
+  margin: auto 15px auto 15px;
+  /* max-width: 750px; */
 }
 
 .App-logo {
@@ -13,24 +23,13 @@
   pointer-events: none;
 }
 
-body {
-  font-size: 11px;
-  font-family: Verdana, Arial;
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: #000156;
-  color: #ffffff;
-  background-image: url("./images/squirrels.gif");
-  font-family: Verdana, Arial;
-}
-
-.body-wrapper {
-  /* margin: 0% 2%; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  background-color: #000156;
-  /* margin: 0 4%; */
   border: 3px solid black;
-  max-width: 800px;
-  margin: 0 auto 0 auto;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   justify-content: center;
   position: relative;
 }
@@ -61,7 +60,7 @@ a:hover {
 }
 
 .wrapper {
-  /* background-color: #100c6b; */
+  background-color: #100c6b;
   /* margin: 0 1em; */
 }
 
@@ -75,7 +74,7 @@ a:hover {
   flex-direction: column;
   position: relative;
   background-color: #100c6b;
-  width: 750px;
+  /* width: 750px; */
 }
 
 .header-top {
@@ -127,7 +126,6 @@ a:hover {
   margin: 2px;
   border: solid #141077;
   width: 100%;
-  max-width: 675px;
   cursor: pointer;
 }
 
@@ -245,3 +243,4 @@ a:hover {
 .footer-links a:hover {
   font-size: 10px;
 }
+/*  */
