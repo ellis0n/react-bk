@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const Wrapper = () => {
   return (
     <div className="App">
-      <div className="body-wrapper">
+      <div className="main-wrapper">
         <Header />
         <Navbar />
         <LoginBar />
