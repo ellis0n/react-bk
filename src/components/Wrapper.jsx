@@ -6,17 +6,17 @@ import Body from "./Body";
 import Footer from "./Footer";
 
 const Wrapper = () => {
-  return (
-    <div className="App">
-      <div className="main-wrapper">
-        <Header />
-        <Navbar />
-        <LoginBar />
-        <Body />
-      </div>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="main-wrapper">
+				<Header />
+				<Navbar />
+				<LoginBar />
+				<Body />
+			</div>
+			<Footer />
+		</div>
+	);
 };
 
 export default Wrapper;
